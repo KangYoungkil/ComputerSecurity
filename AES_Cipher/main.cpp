@@ -1,15 +1,16 @@
-//
-//  main.cpp
-//  AES_Cipher
-//
-//  Created by Bross on 2014. 10. 6..
-//  Copyright (c) 2014년 Bross. All rights reserved.
-//
+#include "AESDecrypt.h"
+#include "AESEncrypt.h"
+int main()
+{
+ 
+    
+    string s;
+    cout << "input : ";
+	getline(cin,s);
+    AESEncrypt encrypt(s);
+	encrypt.encrypt();
 
-#include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+	AESDecrypt decrypt(encrypt.getEncrypt());
+    decrypt.decrypt();
+    
 }

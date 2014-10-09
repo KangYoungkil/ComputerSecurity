@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		336C605419E25E9000AFBFB2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 336C605319E25E9000AFBFB2 /* main.cpp */; };
+		3305A78519E55F850096F0FB /* AESDecrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3305A77F19E55F850096F0FB /* AESDecrypt.cpp */; };
+		3305A78619E55F850096F0FB /* AESEncrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3305A78119E55F850096F0FB /* AESEncrypt.cpp */; };
+		3305A78719E55F850096F0FB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3305A78419E55F850096F0FB /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3305A77F19E55F850096F0FB /* AESDecrypt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AESDecrypt.cpp; sourceTree = "<group>"; };
+		3305A78019E55F850096F0FB /* AESDecrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESDecrypt.h; sourceTree = "<group>"; };
+		3305A78119E55F850096F0FB /* AESEncrypt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AESEncrypt.cpp; sourceTree = "<group>"; };
+		3305A78219E55F850096F0FB /* AESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESEncrypt.h; sourceTree = "<group>"; };
+		3305A78319E55F850096F0FB /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		3305A78419E55F850096F0FB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		336C605019E25E9000AFBFB2 /* AES_Cipher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AES_Cipher; sourceTree = BUILT_PRODUCTS_DIR; };
-		336C605319E25E9000AFBFB2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +64,12 @@
 		336C605219E25E9000AFBFB2 /* AES_Cipher */ = {
 			isa = PBXGroup;
 			children = (
-				336C605319E25E9000AFBFB2 /* main.cpp */,
+				3305A77F19E55F850096F0FB /* AESDecrypt.cpp */,
+				3305A78019E55F850096F0FB /* AESDecrypt.h */,
+				3305A78119E55F850096F0FB /* AESEncrypt.cpp */,
+				3305A78219E55F850096F0FB /* AESEncrypt.h */,
+				3305A78319E55F850096F0FB /* common.h */,
+				3305A78419E55F850096F0FB /* main.cpp */,
 			);
 			path = AES_Cipher;
 			sourceTree = "<group>";
@@ -118,7 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				336C605419E25E9000AFBFB2 /* main.cpp in Sources */,
+				3305A78519E55F850096F0FB /* AESDecrypt.cpp in Sources */,
+				3305A78619E55F850096F0FB /* AESEncrypt.cpp in Sources */,
+				3305A78719E55F850096F0FB /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +246,7 @@
 				336C605919E25E9000AFBFB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
